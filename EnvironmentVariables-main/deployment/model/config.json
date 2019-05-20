@@ -1,0 +1,18 @@
+{
+  "Configuration": {
+    "DatabaseName": "default",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "None"
+  },
+  "Constants": {
+    "EnvironmentVariables.EnvironmentLetter": "D",
+    "EnvironmentVariables.Lognode": "Lognode",
+    "CommunityCommons.MergeMultiplePdfs_MaxAtOnce": "10"
+  },
+  "AdminPassword": null
+}
