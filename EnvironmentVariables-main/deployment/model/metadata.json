@@ -1,5 +1,5 @@
 {
-  "RuntimeVersion": "7.1.0",
+  "RuntimeVersion": "7.23.3.48173",
   "ProjectID": "14e56c38-2415-412b-8b95-fada94f87185",
   "ProjectName": "EnvironmentVariables",
   "ModelVersion": "unversioned",
@@ -39,11 +39,6 @@
     }
   ],
   "ScheduledEvents": [],
-  "Configuration": {
-    "SourceDatabaseType": "HSQLDB",
-    "SourceDatabaseName": "default",
-    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
-  },
   "RequestHandlers": [
     {
       "Name": "/api/",
@@ -62,16 +57,6 @@
     },
     {
       "Name": "/ws-doc/",
-      "DefaultEnabled": false,
-      "MatchExactly": false
-    },
-    {
-      "Name": "/rest/",
-      "DefaultEnabled": false,
-      "MatchExactly": false
-    },
-    {
-      "Name": "/rest-doc/",
       "DefaultEnabled": false,
       "MatchExactly": false
     },

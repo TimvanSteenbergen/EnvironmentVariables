@@ -38,7 +38,7 @@ public class ParseDateTimeWithTimezone extends CustomJavaAction<java.util.Date>
 		this.defaultValue = defaultValue;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.util.Date executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -51,7 +51,7 @@ public class ParseDateTimeWithTimezone extends CustomJavaAction<java.util.Date>
 			sdf.setTimeZone(TimeZone.getTimeZone(timeZone));
 			return sdf.parse(date);
 		} catch (ParseException e) {
-			Logging.log(LogNodes.CommunityCommons.getCaption(), LogLevel.Warning, "Unable to parse date " + date, e);
+			Logging.log(LogNodes.CommunityCommons.name(), LogLevel.Warning, "Unable to parse date " + date, e);
 			return defaultValue;
 		}
 		// END USER CODE
@@ -60,7 +60,7 @@ public class ParseDateTimeWithTimezone extends CustomJavaAction<java.util.Date>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "ParseDateTimeWithTimezone";

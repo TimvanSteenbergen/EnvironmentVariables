@@ -34,7 +34,7 @@ public class MonthsBetween extends CustomJavaAction<java.lang.Long>
 		this.date2 = date2;
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.Long executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -42,7 +42,7 @@ public class MonthsBetween extends CustomJavaAction<java.lang.Long>
 			return DateTime.periodBetween(date1, date2 == null ? new Date() : date2).toTotalMonths();
 		} catch (Exception e) {
 
-			Logging.log(LogNodes.CommunityCommons.getCaption(), LogLevel.Warning, "DateTime calculation error, returning -1", e);
+			Logging.log(LogNodes.CommunityCommons.name(), LogLevel.Warning, "DateTime calculation error, returning -1", e);
 			return -1L;
 		}
 		// END USER CODE
@@ -51,7 +51,7 @@ public class MonthsBetween extends CustomJavaAction<java.lang.Long>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "MonthsBetween";

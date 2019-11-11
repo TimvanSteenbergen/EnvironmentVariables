@@ -45,7 +45,7 @@ import java.util.ArrayList;
 
 public class Misc {
 
-    private static final ILogNode LOG = Core.getLogger(LogNodes.CommunityCommons.getCaption());
+    private static final ILogNode LOG = Core.getLogger(LogNodes.CommunityCommons.name());
 
     public abstract static class IterateCallback<T1, T2> {
 
@@ -264,10 +264,9 @@ public class Misc {
             throw new RuntimeException("Assertion: No username provided");
         }
 
-        // Session does not have a user when it's a scheduled event.
-        if (context.getSession().getUser() != null && username.equals(context.getSession().getUser().getName())) {
+        if (username.equals(context.getSession().getUserName())) {
             return context;
-        } else {
+        } else { // when it is a scheduled event, then get the right session.
             ISession session = getSessionFor(context, username);
 
             IContext c = session.createContext();

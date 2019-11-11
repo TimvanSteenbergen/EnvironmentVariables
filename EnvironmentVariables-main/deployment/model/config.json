@@ -10,8 +10,8 @@
     "ScheduledEventExecution": "None"
   },
   "Constants": {
-    "EnvironmentVariables.EnvironmentLetter": "D",
     "EnvironmentVariables.Lognode": "Lognode",
+    "EnvironmentVariables.EnvironmentLetter": "D",
     "CommunityCommons.MergeMultiplePdfs_MaxAtOnce": "10"
   },
   "AdminPassword": null
